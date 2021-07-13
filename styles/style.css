@@ -1,6 +1,52 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/* Nav bar */
+header{
+background-color: #562EFF;
+display: flex;
+justify-content: center;
+
+}
+.header{
+    width: 870px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px, 0;
+}
+.logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 40.42px;
+    height: 51px;
+    margin-right: 16px;
+  }
+  .nav {
+    display: flex;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .nav p {
+    margin-left: 36px;
+  }
+  
+  .nav img {
+    width: 51px;
+    height: 51px;
+    margin-left: 36px;
+  }
+
+
+
 /* common styles or utilities*/
 body{
     font-family: 'Poppins', sans-serif;
@@ -87,8 +133,15 @@ hr{
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-     grid-gap: 70px; 
-     /* grid-column-gap: 24px;  */
+     /* grid-gap: 20px;  */
+     grid-column-gap: 24px;  
+}
+.course{
+    width: 270px;
+    height: 270px;
+    margin-right: 10px;
+    box-shadow: 15px 15px 50px gray;
+    border-radius: 10px;
 }
 
 .course .course-banner img{
@@ -118,6 +171,28 @@ hr{
     color: #FF4A60;
 
 }
+/* footer  */
+footer {
+    background: var(--color-primary);
+    width: 100%;
+    padding: 2rem;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .footer {
+    width: 870px
+ }
+ footer p {
+    color: rgb(12, 12, 12);
+    column-count: 2;
+    column-fill: balance;
+    column-rule: 2px solid #fff;
+    column-gap: 50px;
+    text-align: center;
+ }
 
 /* media queries */
 
